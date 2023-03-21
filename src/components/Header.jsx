@@ -1,4 +1,4 @@
-import { Box, Typography, IconButton } from "@mui/material";
+import { Box, Typography, IconButton, Divider } from "@mui/material";
 import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
 
 const Header = () => {
@@ -8,8 +8,8 @@ const Header = () => {
         sx={{
           display: "flex",
           justifyContent: "space-between",
-          mx: { sm: "4rem" },
-          px: { sm: "6rem" },
+          mx: { sm: "4rem", md: "20px" },
+          px: { sm: "6rem", md: 0 },
         }}
       >
         <Box>
@@ -58,7 +58,7 @@ const Header = () => {
           </IconButton>
         </Box>
       </Box>
-      <hr />
+      <Divider sx={{ mt: "10px" }} />
     </>
   );
 };

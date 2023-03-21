@@ -8,7 +8,7 @@ import theme from "./theme.js";
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <div style={{ margnTop: "6rem", px: "10rem" }}>
+      <div style={{ margnTop: "6rem", mx: "15rem" }}>
         <Header />
         <Auction />
         <Products />
