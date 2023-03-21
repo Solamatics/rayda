@@ -25,15 +25,38 @@ const Header = () => {
           </Typography>
         </Box>
 
-        <IconButton
-          size="large"
-          edge="start"
-          color="inherit"
-          aria-label="menu"
-          sx={{ mr: 2 }}
-        >
-          <NotificationsNoneOutlinedIcon style={{ color: "#000" }} />
-        </IconButton>
+        <Box>
+          <IconButton
+            size="large"
+            edge="start"
+            color="inherit"
+            aria-label="menu"
+            sx={{ mr: 2, position: "relative" }}
+          >
+            <NotificationsNoneOutlinedIcon
+              style={{ color: "#667085", fontSize: "30px" }}
+            />
+            <div
+              style={{
+                width: "15px",
+                height: "15px",
+                backgroundColor: "red",
+                borderRadius: "50%",
+                color: "white",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                fontSize: "10px",
+                fontWeight: "bold",
+                position: "absolute",
+                bottom: "7px",
+                right: "6px",
+              }}
+            >
+              3
+            </div>
+          </IconButton>
+        </Box>
       </Box>
       <hr />
     </>

@@ -8,16 +8,17 @@ const Auction = () => {
     <Box
       sx={{
         boxShadow: "rgba(0, 0, 0, 0.1) 0px 4px 12px",
-        p: "30px",
+        p: { md: "30px" },
         pb: "20px",
         // margin: "20px",
       }}
     >
       <Box sx={{ width: "1500pxpx" }}>
-        <img
+        <Box
+          component="img"
           src={Banner}
           alt="banner"
-          style={{ width: "100%", borderRadius: "20px" }}
+          sx={{ width: "100%", borderRadius: { xs: "10px", md: "20px" } }}
         />
       </Box>
       <Box
@@ -30,19 +31,31 @@ const Auction = () => {
       >
         <Box
           sx={{
-            marginLeft: { md: "200px" },
+            marginLeft: { md: "180px" },
             fontSize: { sm: "14px", md: "16px" },
           }}
         >
           <Typography>Starts in: 3 days : 2 hours : 24 minutes </Typography>
-          <span>. Not Live</span> <span>Layers Auction</span>
+          <span
+            style={{
+              color: "#F79009",
+              fontSize: "0.8rem",
+              backgroundColor: "#FFFAEB",
+              padding: "5px",
+            }}
+          >
+            . Not Live
+          </span>{" "}
+          <span style={{ color: "#475467", fontSize: "0.8rem" }}>
+            Layers Auction
+          </span>
         </Box>
 
         <Box>
           <Box
             sx={{
               fontSize: { sm: "14px", md: "16px" },
-              border: "1px solid #344054",
+              border: "0.5px solid #344054",
               display: "flex",
               alignItems: "center",
               gap: "10px",
@@ -50,26 +63,26 @@ const Auction = () => {
             }}
           >
             <ThumbUpOutlinedIcon />
-            <span>Accept Invite</span>
+            <span style={{ color: "#344054" }}>Accept Invite</span>
           </Box>
         </Box>
       </Box>
       <Box
         sx={{
           position: "absolute",
-          top: { xs: "100px", md: "250px" },
-          left: "20px",
+          top: { xs: "100px", md: "300px" },
+          left: { xs: "10px", md: "70px" },
         }}
       >
         <Box
           component="img"
           sx={{
             height: {
-              xs: "80px",
+              xs: "70px",
               sm: "144px",
             },
             width: {
-              xs: "80px",
+              xs: "70px",
               sm: "144px",
             },
           }}
