@@ -35,7 +35,7 @@ const Auction = () => {
             fontSize: { sm: "14px", md: "16px" },
           }}
         >
-          <Typography>Starts in: 3 days : 2 hours : 24 minutes </Typography>
+          <Typography sx={{color:"#101828", fontWeight:"600"}}>Starts in: 3 days : 2 hours : 24 minutes </Typography>
           <span
             style={{
               color: "#F79009",
@@ -55,14 +55,15 @@ const Auction = () => {
           <Box
             sx={{
               fontSize: { sm: "14px", md: "16px" },
-              border: "0.5px solid #344054",
+              border: "1px solid #98A2B3",
+              borderRadius: "5px",
               display: "flex",
               alignItems: "center",
               gap: "10px",
               padding: "10px",
             }}
           >
-            <ThumbUpOutlinedIcon />
+            <ThumbUpOutlinedIcon sx={{color:"#98A2B3"}} />
             <span style={{ color: "#344054" }}>Accept Invite</span>
           </Box>
         </Box>
